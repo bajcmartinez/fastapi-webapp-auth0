@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>My Profile</title>
+</head>
+<body>
+    {% include "navbar.html" %}
+    <h2>Profile</h2>
+
+    <div>
+        <span>Hi, {{ userinfo['nickname'] }}!</span>
+    </div>
+
+    <code>
+        <pre>{{ formatted_userinfo }}</pre>
+    </code>
+</body>
+</html>

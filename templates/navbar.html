@@ -1,0 +1,10 @@
+<nav style="display: flex; gap: 10px;">
+    <a href="/">Home</a>
+    {# This is how you conditionally display information based on having a session #}
+    {% if 'userinfo' in request.session %}
+    <a href="/profile">Profile</a>
+    <a href="/logout">Log Out</a>
+    {% else %}
+    <a href="/login">Log In</a>
+    {% endif %}
+</nav>
